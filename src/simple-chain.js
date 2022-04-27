@@ -5,23 +5,23 @@ const { NotImplementedError } = require('../extensions/index.js');
  * 
  */
 const chainMaker = {
-  getLength() {
+  getLength() {//длина цепи в виде числа
     throw new NotImplementedError('Not implemented');
     // remove line with error and write your code here
   },
-  addLink(/* value */) {
+  addLink(/* value */) {//добавляет звено, содержащее строковое представление `value` к цепочке
     throw new NotImplementedError('Not implemented');
     // remove line with error and write your code here
   },
-  removeLink(/* position */) {
+  removeLink(/* position */) {//удаляет звено цепи, находящееся в заданном положении;
     throw new NotImplementedError('Not implemented');
     // remove line with error and write your code here
   },
-  reverseChain() {
+  reverseChain() {// разворачивает цепь задом наперед;
     throw new NotImplementedError('Not implemented');
     // remove line with error and write your code here
   },
-  finishChain() {
+  finishChain() {//завершает цепь и **возвращает** ее
     throw new NotImplementedError('Not implemented');
     // remove line with error and write your code here
   }
