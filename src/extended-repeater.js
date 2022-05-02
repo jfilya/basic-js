@@ -16,43 +16,43 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
   function repeater(str, options) {
-    console.log(str, options)
     let time,s,a,aRT,aS,addit,add;
-    let arr=[]
     if(options.hasOwnProperty('repeatTimes')){
       time= options.repeatTimes;
-    }else time= 1;
-    
+    }else{
+      time= 1;
+    } 
     if(options.hasOwnProperty('separator')){
       s=options.separator;
-    }else s='+';
-    
+    }else {
+      s='+';
+    }  
      if(options.hasOwnProperty('addition')){
       a=options.addition;
-    }else a='';
-    
+    }else {
+      a='';
+    } 
     if(options.hasOwnProperty('additionRepeatTimes')){
       aRT=options.additionRepeatTimes;
-      a.repeat(aRT)
-    }else aRT='';
-    
+    }else {
+      aRT='';
+    }
     if(options.hasOwnProperty('additionSeparator')){
       aS=options.additionSeparator;
       if(aRT !=''){
         addit=((a+aS).repeat(aRT));
         add=addit.substring(0,addit.length-aS.length)
-        } else 
+        } else {
           addit=a+aS
          add=addit.substring(0,addit.length-aS.length)
+        }   
     }else{
       aS='|';
       addit=((a+aS).repeat(aRT));
       add=addit.substring(0,addit.length-aS.length)
-    } 
-    
+    }  
   let result=(str+add+s).repeat(time)
   return result.substring(0,result.length-s.length)
-  
   }
 
 module.exports = {

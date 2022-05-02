@@ -36,7 +36,7 @@ function getSeason(date) {
       return "autumn";
     }
 }
-
+// [Symbol.toStringTag]: 'Date' - присваивает объекту тип object Date, но дает переменной фейк длину 1
   
 
 module.exports = {
