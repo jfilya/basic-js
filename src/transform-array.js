@@ -23,7 +23,7 @@ module.exports = {
 
 function transform(arr) {
   
-  if (!Array.isArray(arr)) throw new Error( `\n'arr' parameter must be an instance of the Array!`);
+  if (!Array.isArray(arr)) throw new Error( "'arr' parameter must be an instance of the Array!");
   if (Array.isArray(arr)) {
       for (let i = 0; i < arr.length; i++) {
         if (arr[0] == "--discard-prev" || arr[0] =='--double-prev') {
@@ -53,5 +53,5 @@ function transform(arr) {
       }return arr;
       
     }
-  throw new Error( `\n'arr' parameter must be an instance of the Array!`);
+  // throw new Error( "'arr' parameter must be an instance of the Array!");
   }
